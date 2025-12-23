@@ -95,7 +95,7 @@ const { data } = await supabase
   .select('*')
   .order('created_at', { ascending: true })
   .limit(50);
-🧪 Test & Run
+Test & Run
 Upload the Arduino sketch to ESP32
 
 Open Serial Monitor to confirm data upload
@@ -104,7 +104,7 @@ Open your HTML dashboard in browser (can be hosted on local file or uploaded to 
 
 Watch the temperature & humidity values update every 10 seconds!
 
-⚠️ Security Warning
+Security Warning
 The bearer token is exposed in both the ESP32 and frontend code.
 
 Do not expose your Supabase secret keys in production environments.
