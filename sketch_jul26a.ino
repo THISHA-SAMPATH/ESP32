@@ -7,13 +7,14 @@
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "Airtel_jaga_6001";
-const char* password = "air36300";
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+
 
 const char* host = "itesopcbbtzqvjwnolzf.supabase.co";
 const char* endpoint = "/rest/v1/sensor_data";
 const int httpsPort = 443;
-const char* bearer_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml0ZXNvcGNiYnR6cXZqd25vbHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM4ODk1NjgsImV4cCI6MjA2OTQ2NTU2OH0.sroe9ltWKG4fqi_vao18lQrmkm9YvoGYjU0swRApcV4";  // Replace with your actual token
+const char* bearer_token = "YOUR_SUPABASE_TOKEN"; 
 
 WiFiClientSecure client;
 
